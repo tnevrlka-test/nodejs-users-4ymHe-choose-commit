@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-plil
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-zmzh-tenant/nodejs-users/simple-nodejs-app-plil@sha256:486f02cbfd5835fb84e5b2410b4a60316c2c21540a5b832f18a1d1ae5421f8d5
+        name: my-nodejs
+        resources: {}
+status: {}
